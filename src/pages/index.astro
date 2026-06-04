@@ -1,0 +1,159 @@
+---
+// index.astro - Catálogo Especializado de Squash
+---
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Squash Pro Shop | Equipo y Encordados Técnicos</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+		
+		<style>
+			body { 
+				font-family: 'Montserrat', sans-serif; 
+				background-color: #0D1117; 
+				color: #C9D1D9;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+			}
+			.container {
+				width: 100%;
+				max-width: 480px;
+				padding: 40px 20px;
+				box-sizing: border-box;
+				text-align: center;
+			}
+			.brand-title {
+				font-size: 28px;
+				font-weight: 800;
+				color: #58A6FF;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				margin-bottom: 5px;
+			}
+			.brand-subtitle {
+				font-size: 13px;
+				color: #8B949E;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				margin-bottom: 35px;
+			}
+			.section-title {
+				font-size: 16px;
+				color: #FF7B72;
+				text-align: left;
+				text-transform: uppercase;
+				font-weight: 700;
+				border-bottom: 1px solid #21262D;
+				padding-bottom: 8px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			.product-card {
+				background: #161B22;
+				border: 1px solid #30363D;
+				border-radius: 12px;
+				padding: 20px;
+				margin-bottom: 20px;
+				text-align: left;
+				box-sizing: border-box;
+			}
+			.product-name {
+				font-size: 18px;
+				font-weight: 700;
+				color: #FFFFFF;
+				margin: 0 0 8px 0;
+			}
+			.tech-specs {
+				background: #0D1117;
+				border-left: 3px solid #7EE787;
+				padding: 8px 12px;
+				font-size: 12px;
+				color: #7EE787;
+				margin-bottom: 12px;
+				border-radius: 0 6px 6px 0;
+			}
+			.product-desc {
+				font-size: 13px;
+				color: #8B949E;
+				line-height: 1.5;
+				margin: 0 0 15px 0;
+			}
+			.product-footer {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.product-price {
+				font-size: 18px;
+				font-weight: 700;
+				color: #FFFFFF;
+			}
+			.btn-order {
+				background: #238636;
+				color: #FFFFFF;
+				text-decoration: none;
+				padding: 10px 16px;
+				border-radius: 6px;
+				font-size: 12px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<main class="container">
+			<h1 class="brand-title">Squash Pro Shop</h1>
+			<p class="brand-subtitle">Equipamiento de Alto Rendimiento</p>
+
+			<h2 class="section-title">Raquetas Especializadas</h2>
+			
+			<!-- Producto 1 -->
+			<div class="product-card">
+				<h3 class="product-name">Raqueta Carboflex 125 Airshaft</h3>
+				<div class="tech-specs">
+					⚙️ Peso: 125g | Balance: Cabeza Ligera | Cuerda: Dynamix VP
+				</div>
+				<p class="product-desc">Diseñada para jugadores de ataque que buscan una velocidad de swing explosiva y máxima manejabilidad en la zona de juego.</p>
+				<div class="product-footer">
+					<span class="product-price">$3,890 MXN</span>
+					<a href="https://api.whatsapp.com/send?phone=529981264934&text=Hola,%20me%20interesa%20la%20Raqueta%20Carboflex%20125" target="_blank" class="btn-order">Apartar</a>
+				</div>
+			</div>
+
+			<!-- Producto 2 -->
+			<div class="product-card">
+				<h3 class="product-name">Raqueta Sonic Core Evolution 130</h3>
+				<div class="tech-specs">
+					⚙️ Peso: 130g | Balance: Híbrido | Tensión Recomendada: 26 lbs
+				</div>
+				<p class="product-desc">Ofrece una estabilidad increíble en el impacto. Perfecta para un control preciso y una excelente colocación de la bola.</p>
+				<div class="product-footer">
+					<span class="product-price">$3,650 MXN</span>
+					<a href="https://api.whatsapp.com/send?phone=529981264934&text=Hola,%20me%20interesa%20la%20Raqueta%20Sonic%20Core%20130" target="_blank" class="btn-order">Apartar</a>
+				</div>
+			</div>
+
+			<h2 class="section-title">Encordados Premium</h2>
+
+			<!-- Producto 3 -->
+			<div class="product-card">
+				<h3 class="product-name">Cuerda Tecnifibre 305 (Verde)</h3>
+				<div class="tech-specs">
+					⚙️ Calibre: 17 (1.20mm) | Composición: Multifilamento PU
+				</div>
+				<p class="product-desc">La cuerda más famosa del circuito profesional PSA. Proporciona la mayor absorción de vibraciones y una elasticidad inigualable.</p>
+				<div class="product-footer">
+					<span class="product-price">$580 MXN</span>
+					<a href="https://api.whatsapp.com/send?phone=529981264934&text=Hola,%20me%20interesa%20la%20Cuerda%20Tecnifibre%20305" target="_blank" class="btn-order">Apartar</a>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
